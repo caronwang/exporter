@@ -1,0 +1,18 @@
+global:
+  scrape_interval:     15s 
+  evaluation_interval: 15s
+  
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+      # - alertmanager:9093
+      
+rule_files:
+
+scrape_configs:
+  - job_name: 'file_ds'
+    file_sd_configs:
+    - refresh_interval: 10s
+      files:
+      - ./fileconfig/*.yml

@@ -1,0 +1,7 @@
+- labels:
+    service: nc
+    project: demo
+  targets: 
+  - 192.168.124.9:8000
+  - 192.168.124.9:8001
+ 
